@@ -120,8 +120,8 @@ body { font-family: var(--body); color: var(--ink); background: var(--white); li
 .why-list li { display: flex; gap: 14px; align-items: flex-start; color: rgba(255,255,255,0.9); }
 .why-list .tick { flex: none; display: grid; place-items: center; width: 26px; height: 26px; border-radius: 50%; background: var(--accent); color: #fff; font-weight: 700; font-size: 0.85rem; margin-top: 2px; }
 .why-list strong { color: #fff; }
-.why-media { min-height: 500px; border-radius: var(--radius); overflow: hidden; border: 1px solid rgba(255,255,255,0.12); box-shadow: var(--shadow-lg);
-  background: url("https://www.mybuilder.com/images/sp/original/33058422_c0f4219349.jpg") center 44%/cover no-repeat; }
+.why-media { position: relative; min-height: 500px; border-radius: var(--radius); overflow: hidden; border: 1px solid rgba(255,255,255,0.12); box-shadow: var(--shadow-lg); background: var(--navy-2); }
+.why-media img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; object-position: center 44%; display: block; }
 
 /* ===== Steps ===== */
 .steps { display: grid; grid-template-columns: repeat(4, 1fr); gap: 22px; }
