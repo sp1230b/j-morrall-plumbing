@@ -71,6 +71,7 @@ body { font-family: var(--body); color: var(--ink); background: var(--white); li
 .nav.scrolled { box-shadow: 0 6px 24px rgba(12,44,82,0.10); }
 .nav-inner { display: flex; align-items: center; justify-content: space-between; height: 74px; }
 .brand { display: flex; align-items: center; gap: 12px; text-decoration: none; }
+.brand-logo { height: 58px; width: auto; display: block; }
 .brand-badge { display: grid; place-items: center; width: 44px; height: 44px; border-radius: 11px; background: var(--navy); color: var(--accent); font-family: var(--head); font-weight: 800; font-size: 1.05rem; letter-spacing: -0.02em; }
 .brand-text { font-family: var(--head); font-weight: 800; font-size: 1.18rem; color: var(--navy); line-height: 1.05; letter-spacing: -0.02em; }
 .brand-text small { display: block; font-size: 0.7rem; font-weight: 600; letter-spacing: 0.12em; text-transform: uppercase; color: var(--muted); }
@@ -85,8 +86,8 @@ body { font-family: var(--body); color: var(--ink); background: var(--white); li
 
 /* ===== Hero ===== */
 .hero { position: relative; color: #fff; overflow: hidden; background: linear-gradient(140deg, var(--navy-3) 0%, var(--navy) 48%, var(--navy-2) 100%); }
-/* real job photo from Josh's MyBuilder portfolio */
-.hero-media { position: absolute; inset: 0; background: url("https://www.mybuilder.com/images/sp/original/33058422_c0f4219349.jpg") center 30%/cover no-repeat; }
+/* real job photo from Josh's MyBuilder portfolio — best finished bathroom */
+.hero-media { position: absolute; inset: 0; background: url("https://www.mybuilder.com/images/sp/original/36024728_ed767ede3f.jpg") center 35%/cover no-repeat; }
 .hero-scrim { position: absolute; inset: 0; background: linear-gradient(112deg, rgba(8,29,58,0.96) 0%, rgba(12,44,82,0.84) 46%, rgba(10,34,60,0.52) 100%); }
 .hero-inner { position: relative; padding: clamp(66px, 11vw, 118px) 0 clamp(60px, 9vw, 100px); max-width: 760px; }
 .hero h1 { font-family: var(--head); font-weight: 800; font-size: clamp(2.4rem, 5.6vw, 4.2rem); line-height: 1.03; letter-spacing: -0.03em; margin: 16px 0 20px; }
@@ -119,7 +120,7 @@ body { font-family: var(--body); color: var(--ink); background: var(--white); li
 .why-list .tick { flex: none; display: grid; place-items: center; width: 26px; height: 26px; border-radius: 50%; background: var(--accent); color: #fff; font-weight: 700; font-size: 0.85rem; margin-top: 2px; }
 .why-list strong { color: #fff; }
 .why-media { min-height: 440px; border-radius: var(--radius); overflow: hidden; border: 1px solid rgba(255,255,255,0.12); box-shadow: var(--shadow-lg);
-  background: url("https://www.mybuilder.com/images/sp/original/31485494_dcf059be43.png") center/cover no-repeat; }
+  background: url("https://www.mybuilder.com/images/sp/original/33058422_c0f4219349.jpg") center/cover no-repeat; }
 
 /* ===== Steps ===== */
 .steps { display: grid; grid-template-columns: repeat(4, 1fr); gap: 22px; }
@@ -139,7 +140,7 @@ body { font-family: var(--body); color: var(--ink); background: var(--white); li
 .g2 { background-image: url("https://www.mybuilder.com/images/sp/original/32742273_d6f262d338.jpg"); }
 .g3 { background-image: url("https://www.mybuilder.com/images/sp/original/34848868_a9a8ecbde9.jpg"); }
 .g4 { background-image: url("https://www.mybuilder.com/images/sp/original/36024719_72813921ee.jpg"); }
-.g5 { background-image: url("https://www.mybuilder.com/images/sp/original/36024728_ed767ede3f.jpg"); }
+.g5 { background-image: url("https://www.mybuilder.com/images/sp/original/31485494_dcf059be43.png"); }
 .g6 { background-image: url("https://www.mybuilder.com/images/sp/original/35854979_4352ca2ebd.jpg"); }
 .gallery-note, .reviews-note { text-align: center; margin-top: 30px; color: var(--muted); }
 .gallery-note a, .reviews-note a { color: var(--accent-dk); font-weight: 600; }
