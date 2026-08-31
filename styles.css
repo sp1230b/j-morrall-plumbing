@@ -85,13 +85,9 @@ body { font-family: var(--body); color: var(--ink); background: var(--white); li
 
 /* ===== Hero ===== */
 .hero { position: relative; color: #fff; overflow: hidden; background: linear-gradient(140deg, var(--navy-3) 0%, var(--navy) 48%, var(--navy-2) 100%); }
-.hero-media { position: absolute; inset: 0; opacity: .5;
-  background:
-    radial-gradient(60% 90% at 82% 12%, rgba(242,130,42,0.28), transparent 60%),
-    radial-gradient(50% 70% at 12% 100%, rgba(31,111,178,0.35), transparent 65%);
-}
-.hero-media::after { content: ""; position: absolute; inset: 0; background-image: linear-gradient(rgba(255,255,255,0.04) 1px, transparent 1px), linear-gradient(90deg, rgba(255,255,255,0.04) 1px, transparent 1px); background-size: 46px 46px; mask-image: linear-gradient(180deg, rgba(0,0,0,0.5), transparent 70%); }
-.hero-scrim { position: absolute; inset: 0; background: linear-gradient(90deg, rgba(8,29,58,0.55), transparent 70%); }
+/* real job photo from Josh's MyBuilder portfolio */
+.hero-media { position: absolute; inset: 0; background: url("https://www.mybuilder.com/images/sp/original/33058422_c0f4219349.jpg") center 30%/cover no-repeat; }
+.hero-scrim { position: absolute; inset: 0; background: linear-gradient(112deg, rgba(8,29,58,0.96) 0%, rgba(12,44,82,0.84) 46%, rgba(10,34,60,0.52) 100%); }
 .hero-inner { position: relative; padding: clamp(66px, 11vw, 118px) 0 clamp(60px, 9vw, 100px); max-width: 760px; }
 .hero h1 { font-family: var(--head); font-weight: 800; font-size: clamp(2.4rem, 5.6vw, 4.2rem); line-height: 1.03; letter-spacing: -0.03em; margin: 16px 0 20px; }
 .hero-sub { font-size: 1.2rem; color: rgba(255,255,255,0.86); max-width: 560px; margin-bottom: 34px; font-weight: 300; }
@@ -122,11 +118,8 @@ body { font-family: var(--body); color: var(--ink); background: var(--white); li
 .why-list li { display: flex; gap: 14px; align-items: flex-start; color: rgba(255,255,255,0.9); }
 .why-list .tick { flex: none; display: grid; place-items: center; width: 26px; height: 26px; border-radius: 50%; background: var(--accent); color: #fff; font-weight: 700; font-size: 0.85rem; margin-top: 2px; }
 .why-list strong { color: #fff; }
-.why-media { min-height: 420px; border-radius: var(--radius); position: relative; overflow: hidden;
-  background: linear-gradient(150deg, var(--navy-2), var(--navy-3));
-  border: 1px solid rgba(255,255,255,0.12); }
-.why-media::before { content: "JM"; position: absolute; inset: 0; display: grid; place-items: center; font-family: var(--head); font-weight: 800; font-size: 6rem; color: rgba(242,130,42,0.16); letter-spacing: -0.03em; }
-.why-media::after { content: "Photo of Josh / his work goes here"; position: absolute; bottom: 18px; left: 0; right: 0; text-align: center; font-size: 0.8rem; color: rgba(255,255,255,0.4); }
+.why-media { min-height: 440px; border-radius: var(--radius); overflow: hidden; border: 1px solid rgba(255,255,255,0.12); box-shadow: var(--shadow-lg);
+  background: url("https://www.mybuilder.com/images/sp/original/31485494_dcf059be43.png") center/cover no-repeat; }
 
 /* ===== Steps ===== */
 .steps { display: grid; grid-template-columns: repeat(4, 1fr); gap: 22px; }
@@ -139,9 +132,15 @@ body { font-family: var(--body); color: var(--ink); background: var(--white); li
 .gallery { display: grid; grid-template-columns: repeat(3, 1fr); gap: 18px; }
 .g-item { position: relative; height: 240px; border-radius: var(--radius); overflow: hidden; display: flex; align-items: flex-end; padding: 18px; }
 .g-item figcaption { font-family: var(--head); font-weight: 700; color: #fff; position: relative; z-index: 2; }
-.g-item.ph { background: linear-gradient(150deg, var(--navy-2), var(--navy-3)); border: 1px solid var(--line); }
-.g-item.ph::before { content: ""; position: absolute; inset: 0; background: radial-gradient(70% 70% at 70% 20%, rgba(242,130,42,0.18), transparent 60%); }
-.g-item.ph::after { content: "Real photo"; position: absolute; top: 14px; right: 14px; font-size: 0.68rem; letter-spacing: 0.1em; text-transform: uppercase; color: rgba(255,255,255,0.5); border: 1px solid rgba(255,255,255,0.25); padding: 3px 9px; border-radius: 999px; }
+.g-item::before { content: ""; position: absolute; inset: 0; z-index: 1; background: linear-gradient(transparent 42%, rgba(8,29,58,0.74)); }
+.g-item { background-size: cover; background-position: center; }
+/* real job photos from Josh's MyBuilder portfolio */
+.g1 { background-image: url("https://www.mybuilder.com/images/sp/original/28029311_b7842b2538.jpg"); }
+.g2 { background-image: url("https://www.mybuilder.com/images/sp/original/32742273_d6f262d338.jpg"); }
+.g3 { background-image: url("https://www.mybuilder.com/images/sp/original/34848868_a9a8ecbde9.jpg"); }
+.g4 { background-image: url("https://www.mybuilder.com/images/sp/original/36024719_72813921ee.jpg"); }
+.g5 { background-image: url("https://www.mybuilder.com/images/sp/original/36024728_ed767ede3f.jpg"); }
+.g6 { background-image: url("https://www.mybuilder.com/images/sp/original/36675982_47e8af308f.jpg"); }
 .gallery-note, .reviews-note { text-align: center; margin-top: 30px; color: var(--muted); }
 .gallery-note a, .reviews-note a { color: var(--accent-dk); font-weight: 600; }
 
